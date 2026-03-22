@@ -23,7 +23,11 @@ export default function RootLayout({
       className={cn("antialiased", fontSans.variable, "font-mono", jetbrainsMono.variable)}
     >
       <body>
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <main className="px-40 mx-auto py-10">
+            {children}
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   )
